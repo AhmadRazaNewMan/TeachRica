@@ -23,13 +23,13 @@ const Navbar = () => {
 
   return (
     // Navbar
-    <div className={` ${active ? "shadow-lg " : ""} fixed w-full top-0 left-0 z-20 bg-navClr`} >
-      <div>
+    <div className={` ${active ? "shadow-lg " : ""} fixed w-full  top-0 left-0 z-20 bg-navClr`} >
+      <div className=''>
         <div className=' bg-bluePrimary flex items-center justify-center  h-[1.5rem]'>
           <p className="text-center text-xs text-white"> 15% Discount for new registered student. Avail this amazing opportunity</p>
         </div>
         <div className=" ">
-          <div className={`${active ? "py-3 transition-all duration-300" : "py-6 "} container py-4 mx-auto flex items-center justify-between px-1 `}>
+          <div className={`${active ? "py-3 transition-all duration-300" : "py-6 "}  container mx-auto   flex items-center justify-between px-1 `}>
 
             <div className='flex items-center gap-4 w-1/3 ' >
               {/* left icon */}
@@ -68,7 +68,7 @@ const Navbar = () => {
 
             {/* Links */}
             <div
-              className='sm:flex items-center hidden font-semibold w-2/3  justify-end'>
+              className='sm:flex  hidden font-semibold w-2/3  items-center justify-center  '>
               {navLinks.map((navLink) => {
                 return <NavLink key={navLink.id} {...navLink}
                 />;

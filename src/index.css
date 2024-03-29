@@ -17,3 +17,32 @@
         @apply mx-auto py-24 px-4 min-h-screen
     }
 }
+.container {
+    width: 100%;
+}
+@media (min-width: 480px) {
+    .container {
+        max-width: 680px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+@media (min-width: 1060px) {
+    .container {
+        max-width: 78%;
+    }
+}
+@media (min-width: 1160px) {
+.container {
+    max-width: 80%;
+}
+}
+@media (min-width: 1260px) {
+    .container {
+        min-width: 84%;
+    }
+}
+

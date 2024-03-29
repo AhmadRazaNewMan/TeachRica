@@ -62,14 +62,14 @@ const Home = () => {
 
             </div>
 
-            <p className='text-white font-semibold text-2xl'>How it works?  </p>
+            <p className='text-white font-semibold text-2xl '>How it works?  </p>
           </div>
 
-          <div className=" w-7/12 flex flex-col gap-32">
+          <div className=" w-7/12   flex flex-col gap-32">
             {/* relative */}
             <div className="flex flex-col gap-10 mt-10 relative ">
               <div className='text-6xl font-extrabold w-100 m-auto text-center leading-normal relative z-10'>
-                <span className='text-blueSecondary '>Grow</span> Your Learning Skill By Tuition
+                <span className=' bg-orange-500  '>Grow</span> Your Learning Skill By Tuition
                 <span />
               </div>
 
