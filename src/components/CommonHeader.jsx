@@ -6,7 +6,7 @@ import pair1top from "../assets/pair1top.png";
 
 const CommonHeader = () => {
   return (
-    <div className=" bg-bluePrimary  w-full py-32 flex  flex-end ">
+    <div className=" bg-bluePrimary  w-full py-32 flex  flex-end mb-20 ">
       <div className="text-white  ml-[30%] flex flex-col items-center ">
       
         <h1 className="text-5xl  text-md font-bold mb-8 "> About Us</h1>

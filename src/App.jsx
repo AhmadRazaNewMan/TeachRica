@@ -3,7 +3,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './Pages/HomePage';
 import AboutPage from './Pages/AboutPage';
 import ServicesPage from './Pages/ServicesPage';
-import Modal from './components/Modal';
+
+
+import TestimonialsPage from './Pages/TestimonialsPage';
+import ContactPage from './Pages/ContactPage';
 function App() {
 
   return (
@@ -16,6 +19,10 @@ function App() {
         <Route path="TeachRica/" element={<HomePage />} />
         <Route path='TeachRica/about' element ={<AboutPage/>}/>
         <Route path='TeachRica/services' element ={<ServicesPage/>}/>
+        <Route path='TeachRica/testimonials' element ={<TestimonialsPage/>}/>
+        <Route path='TeachRica/contactus' element ={<ContactPage/>}/>
+
+
 
          
 

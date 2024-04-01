@@ -12,6 +12,7 @@ const ServicesPage = () => {
     <div>
     <Navbar color={"bg-white"}/>
     <CommonHeader/>
+    {/* Services Section */}
     <div
       className=" flex flex-col items-center justify-center py-32"
       id="service"
