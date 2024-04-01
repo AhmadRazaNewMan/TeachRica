@@ -6,16 +6,16 @@ import pair1top from "../assets/pair1top.png";
 
 const CommonHeader = () => {
   return (
-    <div className=" bg-bluePrimary  w-full py-32 flex  flex-end mb-20 ">
+    <div className=" bg-bluePrimary xs:flex-col justify-center items-center sm:flex-col md:flex-row  w-full py-32 flex  flex-end mb-20 overflow-hidden ">
       <div className="text-white  ml-[30%] flex flex-col items-center ">
       
-        <h1 className="text-5xl  text-md font-bold mb-8 "> About Us</h1>
-        <p className="pl-4">
+        <h1 className="xs:text-5xl md:text-7xl   font-bold mb-8  mr-40 md:mb-10"> About Us</h1>
+        <p className="pl-4  xs:mt-1 md:mt- mr-40 w-4/5  text-lg">
         Build your future with our quality education. The best and largest all in one online and home tuition services in the region.
         </p>
       </div>
 
-      <div className="flex">
+      <div className="flex  mt-7 m">
         <svg
         className="relative z-50"
           width="169"
@@ -171,7 +171,7 @@ const CommonHeader = () => {
               </div>
             </div>
 
-            <p className="text-white font-semibold text-2xl ">How it works? </p>
+            <p className="text-white font-semibold text-xl  w-[150px] ">How it works? </p>
           </div>
         </div>
       </div>
