@@ -6,7 +6,7 @@ const AboutPage = () => {
   return (
     <div>
         
-        <Navbar/>
+        <Navbar color={"bg-white"}/>
         <CommonHeader/>
         <About />
         <Services />

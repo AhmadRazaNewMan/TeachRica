@@ -5,7 +5,7 @@ import NavLink from "./NavLink";
 import MobileNavLinks from './MobileNavLinks';
 import { motion } from "framer-motion"
 
-const Navbar = () => {
+const Navbar = ({color}) => {
   // toggle state
   const [toggle, setToggle] = useState(false)
 
@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     // Navbar
-    <div className={` ${active ? "shadow-lg " : ""} fixed w-full  top-0 left-0 z-20 bg-navClr`} >
+    <div className={` ${active ? "shadow-lg " : ""} fixed w-full  top-0 left-0 z-20 ${color}`} >
       <div className=''>
         <div className=' bg-bluePrimary flex items-center justify-center  h-[1.5rem]'>
           <p className="text-center text-xs text-white"> 15% Discount for new registered student. Avail this amazing opportunity</p>

@@ -4,7 +4,7 @@ import { Navbar, Home, About, Services, Teacher, Contact, Footer, } from "../com
 const HomePage = () => {
   return (
     <div>
-      <Navbar />
+      <Navbar color={"bg-navClr"} />
         <Home />
         <About />
         <Services />
