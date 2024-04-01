@@ -46,3 +46,9 @@
     }
 }
 
+/* CSS */
+.active-nav-link {
+    color: #4CAF50; /* Change to your desired active color */
+    text-decoration: underline;
+  }
+  

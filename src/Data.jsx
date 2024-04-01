@@ -5,31 +5,31 @@ import blue from "./assets/commaBlue.png"
 export const navLinks = [
   {
     id: 1,
-    href: "home",
+    href: "/home",
     link: "Home",
   },
   {
     id: 2,
-    href: "about",
+    href: "/about",
     link: "About",
   },
   {
     id: 3,
-    href: "service",
+    href: "/services",
     link: "Services",
   },
   {
     id: 4,
-    href: "testimonial",
+    href: "/testimonials",
     link: "Testimonials",
   },
- 
   {
     id: 5,
-    href: "contact",
+    href: "/contactus",
     link: "Contact",
   },
 ];
+
 
 export const ServiceData = [
   {

@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './Pages/HomePage';
 import AboutPage from './Pages/AboutPage';
 import ServicesPage from './Pages/ServicesPage';
+import ContactUsPage from './Pages/ContactPage'
 
-
-import TestimonialsPage from './Pages/TestimonialsPage';
 import ContactPage from './Pages/ContactPage';
+import TestimonialsPage from './Pages/TestimonialsPage';
 function App() {
 
   return (
@@ -15,18 +15,14 @@ function App() {
    
        <div className="App font-Montserrat bg-Solitude">
        <Router>
-      <Routes>
-        <Route path="TeachRica/" element={<HomePage />} />
+       <Routes>
+       <Route path="TeachRica/home" element={<HomePage />} />
         <Route path='TeachRica/about' element ={<AboutPage/>}/>
         <Route path='TeachRica/services' element ={<ServicesPage/>}/>
         <Route path='TeachRica/testimonials' element ={<TestimonialsPage/>}/>
         <Route path='TeachRica/contactus' element ={<ContactPage/>}/>
 
-
-
-         
-
-      </Routes>
+</Routes>
     </Router> 
   </div>
     </>
