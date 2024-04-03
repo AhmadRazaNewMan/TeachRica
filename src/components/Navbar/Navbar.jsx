@@ -162,38 +162,33 @@ const Navbar = ({ color }) => {
 
             <div className="sm:flex hidden font-semibold w-2/3 items-center justify-center">
               <div className="flex  md:gap-3 lg:gap-6 xl:gap-10 text-[18px] text-md w-[700px] mr-10">
-                <Link
+              <Link
                   to="/TeachRica/home"
-                  className="nav-link"
-                  activeClassName="active-nav-link"
+                  
                 >
                   Home
                 </Link>
                 <Link
                   to="/TeachRica/about"
-                  className="nav-link"
-                  activeClassName="active-nav-link"
+                 
                 >
                   About Us
                 </Link>
                 <Link
                   to="/TeachRica/services"
-                  className="nav-link"
-                  activeClassName="active-nav-link"
+                 
                 >
                   Services
                 </Link>
                 <Link
                   to="/TeachRica/testimonials"
-                  className="nav-link"
-                  activeClassName="active-nav-link"
+                 
                 >
                   Testimonials
                 </Link>
                 <Link
                   to="/TeachRica/contactus"
-                  className="nav-link"
-                  activeClassName="active-nav-link"
+                 
                 >
                   Contact Us
                 </Link>
@@ -213,17 +208,37 @@ const Navbar = ({ color }) => {
                 transition={{ duration: 0.3 }}
                 className="fixed h-full w-56 top-0 left-0 z-20 bg-bluePrimary text-white flex flex-col justify-center items-center shadow-lg gap-6 py-8"
               >
-                {navLinks.map((navLink) => {
-                  return (
-                    <MobileNavLinks
-                      key={navLink.id}
-                      {...navLink}
-                      setToggle={setToggle}
-                      spy={true}
-                    />
-                  );
-                })}
-
+                
+                <Link
+                  to="/TeachRica/home"
+                  
+                >
+                  Home
+                </Link>
+                <Link
+                  to="/TeachRica/about"
+                 
+                >
+                  About Us
+                </Link>
+                <Link
+                  to="/TeachRica/services"
+                 
+                >
+                  Services
+                </Link>
+                <Link
+                  to="/TeachRica/testimonials"
+                 
+                >
+                  Testimonials
+                </Link>
+                <Link
+                  to="/TeachRica/contactus"
+                 
+                >
+                  Contact Us
+                </Link>
                 {/* Cross icon */}
                 <HiX
                   className="absolute top-6 right-6 text-3xl cursor-pointer"
