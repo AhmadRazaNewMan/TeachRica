@@ -160,10 +160,10 @@ const Navbar = ({ color }) => {
 
             {/* Links */}
 
-            <div className="sm:flex hidden font-semibold w-2/3 items-center justify-center">
-              <div className="flex  md:gap-3 lg:gap-6 xl:gap-10 text-[18px] text-md w-[700px] mr-10">
+            <div className="sm:flex mx-10 hidden font-semibold w-[100%] items-center justify-center">
+            <div className="  w-inherit flex gap-2 sm:text-[14px] md:gap-4 md:text-[15px]  ">
               <Link
-                  to="/TeachRica/home"
+                  to="/TeachRica/"
                   
                 >
                   Home
@@ -210,7 +210,7 @@ const Navbar = ({ color }) => {
               >
                 
                 <Link
-                  to="/TeachRica/home"
+                  to="/TeachRica/"
                   
                 >
                   Home

@@ -16,7 +16,7 @@ function App() {
        <div className="App font-Montserrat bg-Solitude">
        <Router>
        <Routes>
-       <Route path="TeachRica/home" element={<HomePage />} />
+       <Route path="TeachRica/" element={<HomePage />} />
         <Route path='TeachRica/about' element ={<AboutPage/>}/>
         <Route path='TeachRica/services' element ={<ServicesPage/>}/>
         <Route path='TeachRica/testimonials' element ={<TestimonialsPage/>}/>
