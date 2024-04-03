@@ -15,7 +15,7 @@ const MobileNavLinks = ({ setToggle, link, href }) => {
           className='font-bold transition-all duration-300'
           onClick={() => setToggle(prev => !prev)}
         >
-           Ahmad
+           A
         </ScrollLink>
       
     </li>

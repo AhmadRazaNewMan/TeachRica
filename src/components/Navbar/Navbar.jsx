@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { navLinks } from "../../Data";
 import { HiMenuAlt1, HiX } from "react-icons/hi";
-import NavLink from "./NavLink";
+// import NavLink from "./NavLink";
 import MobileNavLinks from "./MobileNavLinks";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";

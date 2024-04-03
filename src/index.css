@@ -20,6 +20,8 @@
 .container {
     width: 100%;
 }
+
+ /* Coustom Media Queries For Navabar */
 @media (min-width: 480px) {
     .container {
         max-width: 680px;
@@ -46,9 +48,3 @@
     }
 }
 
-/* CSS */
-.active-nav-link {
-    color: #4CAF50; /* Change to your desired active color */
-    text-decoration: underline;
-  }
-  
