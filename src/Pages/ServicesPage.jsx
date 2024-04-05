@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+
 import { Navbar, Footer } from '../components/index';
 import CommonHeader from '../components/CommonHeader';
 import serviceOne from '../assets/service1.png';
@@ -42,7 +42,7 @@ const ServicesPage = () => {
       
 
          <div className="sm:w-1/3 w-2/3 relative " >
-          <img src={serviceOne} alt="" className="w-96 block m-auto" />
+          <img src={serviceOne} alt="" className="w-96 block m-auto" onClick={()=>{console.log()}} />
           <p className="text-2xl font-bold text-start mt-2 p-3">
             Soft Skills Courses
           </p>
@@ -233,11 +233,3 @@ const ServicesPage = () => {
 
 export default ServicesPage;
 
-
-const ServiceModel = ()=>{
-  return(
-    <>
-
-    </>
-  )
-}

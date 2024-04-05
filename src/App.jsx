@@ -7,24 +7,30 @@ import ContactUsPage from './Pages/ContactPage'
 
 import ContactPage from './Pages/ContactPage';
 import TestimonialsPage from './Pages/TestimonialsPage';
+import ServiceModal from './Pages/ServiceModal';
+
 function App() {
 
   return (
     <>
     
    
-       <div className="App font-Montserrat bg-Solitude">
-       <Router>
-       <Routes>
-       <Route path="TeachRica/" element={<HomePage />} />
-        <Route path='TeachRica/about' element ={<AboutPage/>}/>
-        <Route path='TeachRica/services' element ={<ServicesPage/>}/>
-        <Route path='TeachRica/testimonials' element ={<TestimonialsPage/>}/>
-        <Route path='TeachRica/contactus' element ={<ContactPage/>}/>
+     
+<Router>
 
-</Routes>
-    </Router> 
-  </div>
+      {/* <Routes>
+        <Route path="TeachRica/" element={<HomePage />} />
+        <Route path='TeachRica/about' element={<AboutPage />} />
+        <Route path='TeachRica/services' element={<ServicesPage />} />
+        <Route path='TeachRica/testimonials' element={<TestimonialsPage />} />
+        <Route path='TeachRica/contactus' element={<ContactUsPage />} />
+      </Routes> */}
+      <ServiceModal />
+    
+     
+    </Router>
+  
+  
     </>
   )
 }
