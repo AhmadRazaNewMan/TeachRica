@@ -18,14 +18,14 @@ function App() {
      
 <Router>
 
-      {/* <Routes>
+      <Routes>
         <Route path="TeachRica/" element={<HomePage />} />
         <Route path='TeachRica/about' element={<AboutPage />} />
         <Route path='TeachRica/services' element={<ServicesPage />} />
         <Route path='TeachRica/testimonials' element={<TestimonialsPage />} />
         <Route path='TeachRica/contactus' element={<ContactUsPage />} />
-      </Routes> */}
-      <ServiceModal />
+      </Routes>
+      {/* <ServiceModal /> */}
     
      
     </Router>
