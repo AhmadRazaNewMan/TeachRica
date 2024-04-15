@@ -21,7 +21,7 @@ const Contact = () => {
               name=""
               id=""
               placeholder='Name'
-              className='bg-transparent m-auto border rounded-md border-white mb-4 p-1 pl-2 placeholder-white outline-none' />
+              className='bg-transparent m-auto border rounded-md border-white mb-4 p-1 pl-2 placeholder-white text-white outline-none' />
             <br />
 
             {/*  */}
@@ -30,14 +30,14 @@ const Contact = () => {
               name=""
               id=""
               placeholder='Email'
-              className='bg-transparent m-auto border rounded-md  border-white mb-4 p-1 pl-2 placeholder-white outline-none' />
+              className='bg-transparent m-auto border rounded-md  border-white mb-4 p-1 pl-2 placeholder-white  text-white outline-none' />
             <br />
             <input
               type="text"
               name=""
               id=""
               placeholder='Your Message'
-              className='bg-transparent m-auto border rounded-md  border-white mb-4 pt-4 pr-4 pl-4 pb-28 placeholder-white outline-none' />
+              className='bg-transparent m-auto border rounded-md  border-white mb-4 pt-4 pr-4 pl-4 pb-28 placeholder-white   text-white outline-none' />
             <br />
             <button type="submit" className='bg-white rounded-3xl py-3 px-8 text-center text-sm w-80 m-auto block font-bold mt-10'>
               Send Message
@@ -47,8 +47,8 @@ const Contact = () => {
 
       </div>
 
-      <div className="phoneSet relative">
-        <img src={contactPhone} alt="" className='phhhh w-72 absolute bottom-20 right-24 z-10' />
+      <div className="phoneSet border-2 relative">
+        <img src={contactPhone} alt="" className=' w-72 absolute bottom-20 right-24 z-10' />
 
         <svg xmlns="http://www.w3.org/2000/svg" className='absolute bottom-20 right-24 z-0' width="178" height="179" viewBox="0 0 178 179" fill="none" >
           <circle cx="89.1799" cy="89.5011" r="88.5503" transform="rotate(-73.421 89.1799 89.5011)" fill="#FFD15C" />

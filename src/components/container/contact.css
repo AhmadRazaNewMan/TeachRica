@@ -6,7 +6,6 @@
     background-size: cover;
     background-position: center;
     background-blend-mode: multiply;
-    /* Blend mode for the images */
 }
 
 
@@ -14,14 +13,6 @@
 input {
     width: 566px;
 }
-
-/* .phoneSet {
-    width: 190px;
-    flex-shrink: 0;
-    position: absolute;
-    top: 165px;
-    right: 50px;
-} */
 
 
 @media (max-width: 768px) {

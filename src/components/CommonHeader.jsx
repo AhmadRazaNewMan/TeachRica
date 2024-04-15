@@ -4,20 +4,20 @@ import pair1last from "../assets/pair1last.png";
 import pair1mid from "../assets/pair1mid.png";
 import pair1top from "../assets/pair1top.png";
 
-const CommonHeader = () => {
+const CommonHeader = ({data}) => {
   return (
     <div className=" bg-bluePrimary xs:flex-col justify-center items-center sm:flex-col md:flex-row  w-full py-32 flex  flex-end mb-20 overflow-hidden ">
       <div className="text-white  ml-[30%] flex flex-col items-center ">
       
-        <h1 className="xs:text-5xl md:text-7xl   font-bold mb-8  mr-40 md:mb-10"> About Us</h1>
+        <h1 className="xs:text-5xl md:text-7xl   font-bold mb-8  mr-40 md:mb-10">{data.title} </h1>
         <p className="pl-4  xs:mt-1 md:mt- mr-40 w-4/5  text-lg">
-        Build your future with our quality education. The best and largest all in one online and home tuition services in the region.
+        {data.description}
         </p>
       </div>
 
-      <div className="flex  mt-7 m">
+      <div className="flex  mt-7 ">
         <svg
-        className="relative z-50"
+        className="z-10"
           width="169"
           height="166"
           viewBox="0 0 169 166"

@@ -5,10 +5,14 @@ import tutor from "../assets/tutorOne.png"
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
 const ContactPage = () => {
+  const  data = {
+    title:"Contact Us",
+    description:"Build your future with our quality education. The best and largest all in one online and home tution services in the region.",
+  } 
   return (
     <div>
        <Navbar color={"bg-white"} />
-       <CommonHeader />
+       <CommonHeader data= {data} />
        <Contact/>
        <div className="h-60 bg-bluePrimary relative mt-40">
         <div className="flex items-center justify-center gap-3 pt-14">

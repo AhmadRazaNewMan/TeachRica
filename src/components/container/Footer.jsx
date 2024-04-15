@@ -75,8 +75,8 @@ const Footer = () => {
       </div>
 
       {/*  pics and email phone etc */}
-      <div className="flex items-center justify-between w-2/5 m-auto  mb-10">
-        <div className="flex flex-col gap-5 items-center  text-center">
+      <div className="flex  flex-row items-center justify-between sm:w-3/5 md:w-3/5 m-auto   mb-10">
+        <div className="flex  flex-col gap-5 items-center  text-center">
 
           <svg xmlns="http://www.w3.org/2000/svg" width="56" height="57" viewBox="0 0 56 57" fill="none">
             <rect y="0.0229492" width="56" height="56" rx="8" fill="#00C9DA" />

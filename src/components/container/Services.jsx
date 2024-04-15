@@ -3,7 +3,7 @@ import serviceOne from "../../assets/service1.png";
 import serviceTwo from "../../assets/service2.png";
 import serviceThree from "../../assets/service3.png";
 
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import {Link} from "react-router-dom"
 
 const Services = () => {
   return (
@@ -27,7 +27,7 @@ const Services = () => {
         <p className="font-bold text-3xl">How Can We Help You?</p>
       </div>
 
-      <div className=" flex-col flex w-5/6 m-auto gap-4 sm:flex-row justify-center items-center">
+      <div className=" flex-col  flex w-5/6 m-auto gap-4 sm:flex-row justify-center items-center">
         <div className="sm:w-1/3 w-2/3 relative">
           <img src={serviceOne} alt="" className="w-96 block m-auto" />
           <p className="text-2xl font-bold text-start mt-2 p-3">
@@ -43,7 +43,7 @@ const Services = () => {
             height="109"
             viewBox="0 0 108 109"
             fill="none"
-            className="border-2 border-black absolute left-0 bottom-24  "
+            className=" absolute left-0 bottom-24  "
           >
             <path
               d="M89.895 90.15L13.6568 13.9119C8.61713 8.87214 -8.16208e-06 12.4415 -8.47362e-06 19.5687L-1.18061e-05 95.8068C-1.19992e-05 100.225 3.58171 103.807 7.99999 103.807L84.2381 103.807C91.3653 103.807 94.9347 95.1897 89.895 90.15Z"
@@ -86,14 +86,13 @@ const Services = () => {
           </svg>
         </div>
       </div>
-      <ScrollLink
-        to="service"
-        smooth={true}
-        duration={800}
+      <Link
+        to={'/TeachRica/services'}
+      
         className="text-sm py-3 px-7 text-white bg-blueSecondary rounded-3xl font-semibold cursor-pointer mt-6"
       >
         Explore More Service
-      </ScrollLink>
+      </Link>
     </div>
   );
 };

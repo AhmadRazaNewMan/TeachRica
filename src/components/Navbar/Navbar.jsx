@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { navLinks } from "../../Data";
 import { HiMenuAlt1, HiX } from "react-icons/hi";
-// import NavLink from "./NavLink";
-import MobileNavLinks from "./MobileNavLinks";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
-import { NavLink as RouterNavLink } from "react-router-dom"; // import {activeLink as NavLink   } from "react-router-dom";
+import { Link,useLocation } from "react-router-dom";
 
 const Navbar = ({ color }) => {
+  const Location = useLocation()
+  console.log(Location)
+  const isActive=(path) =>{
+    return Location.pathname ===path;
+  }
   // toggle state
   const [toggle, setToggle] = useState(false);
 
@@ -37,7 +38,7 @@ const Navbar = ({ color }) => {
             opportunity
           </p>
         </div>
-        <div className=" ">
+        <div className="">
           <div
             className={`${
               active ? "py-3 transition-all duration-300" : "py-6 "
@@ -49,10 +50,9 @@ const Navbar = ({ color }) => {
                 className="text-3xl sm:hidden cursor-pointer"
                 onClick={() => setToggle(true)}
               />
-              {/* Name */}
-              {/* <img src={techLogo} alt="" className='w-28 cursor-pointer' /> */}
-
+              
               <svg
+              className=" "
                 xmlns="http://www.w3.org/2000/svg"
                 width="120"
                 height="49"
@@ -160,33 +160,39 @@ const Navbar = ({ color }) => {
 
             {/* Links */}
 
-            <div className="sm:flex mx-10 hidden font-semibold w-[100%] items-center justify-center">
-            <div className="  w-inherit flex gap-2 sm:text-[14px] md:gap-4 md:text-[15px]  ">
-              <Link
+            <div className="sm:flex mx-10 hidden  font-semibold w-[100%] items-center justify-center ">
+            <div className="  w-inherit flex gap-2 sm:text-[14px] md:gap-4 md:text-[15px]  " >
+              <Link className={isActive('/TeachRica/') ? 'text-bluePrimary underline' : 'text-black'} onClick={() => isActive('/TeachRica/')}
                   to="/TeachRica/"
                   
                 >
                   Home
                 </Link>
-                <Link
+                <Link 
+                className={isActive('/TeachRica/about') ? 'text-bluePrimary underline' : 'text-black'} onClick={() => isActive('/TeachRica/about')}
                   to="/TeachRica/about"
                  
                 >
                   About Us
                 </Link>
                 <Link
+                className={isActive('/TeachRica/services') ? 'text-bluePrimary underline' : 'text-black'} onClick={() => isActive('/TeachRica/servives')}
                   to="/TeachRica/services"
                  
                 >
                   Services
                 </Link>
+                {/* Stem Education System Button */}
+                <Link className="bg-red-500 text-white rounded-md  px-8 py-2 relative bottom-2">Stem Education</Link>
                 <Link
-                  to="/TeachRica/testimonials"
+                className={isActive('/TeachRica/testimonials') ? 'text-bluePrimary underline' : 'text-black'} onClick={() => isActive('/TeachRica/testimonials')}
+                  to={"/TeachRica/testimonials"}
                  
                 >
                   Testimonials
                 </Link>
                 <Link
+                className={isActive('/TeachRica/contactus') ? 'text-bluePrimary underline' : 'text-black'} onClick={() => isActive('/TeachRica/contactus')}
                   to="/TeachRica/contactus"
                  
                 >
@@ -206,7 +212,7 @@ const Navbar = ({ color }) => {
                 initial={{ x: -500, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.3 }}
-                className="fixed h-full w-56 top-0 left-0 z-20 bg-bluePrimary text-white flex flex-col justify-center items-center shadow-lg gap-6 py-8"
+                className="fixed h-full w-56 top-0 left-0 z-50 bg-bluePrimary text-white flex flex-col justify-center items-center shadow-lg gap-6 py-8"
               >
                 
                 <Link
