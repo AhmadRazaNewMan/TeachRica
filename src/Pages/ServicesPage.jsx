@@ -5,11 +5,13 @@ import serviceOne from '../assets/service1.png';
 import serviceTwo from '../assets/service2.png';
 import serviceThree from '../assets/service3.png';
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import {  useNavigate } from 'react-router-dom';
 
 
 
 
 const ServicesPage = () => {
+  const navigate  = useNavigate()
   
 
 
@@ -41,8 +43,8 @@ const ServicesPage = () => {
       <div className=" flex-col flex w-5/6 m-auto mb gap-4 sm:flex-row justify-center items-center">
       
 
-         <div className="sm:w-1/3 w-2/3 relative " >
-          <img src={serviceOne} alt="" className="w-96 block m-auto" onClick={()=>{console.log()}} />
+         <div className="sm:w-1/3 w-2/3 relative " onClick={()=>navigate('/TeachRica/service-modal')}>
+          <img src={serviceOne} alt="" className="w-96 block m-auto"  />
           <p className="text-2xl font-bold text-start mt-2 p-3">
             Soft Skills Courses
           </p>
