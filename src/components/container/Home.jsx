@@ -7,6 +7,7 @@ import pair1top from "../../assets/pair1top.png";
 import rectangle from "../../assets/Rectangle 2.png";
 import { FaStar } from "react-icons/fa";
 import { Link } from "react-scroll";
+import cardImage from '../../assets/cardImage.png'
 const Home = () => {
   return (
     <div className="">
@@ -113,6 +114,7 @@ const Home = () => {
                 offset={-50}
                 className="font-boldtransition-all duration-300 cursor-pointer"
               >
+                
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="18"
@@ -276,36 +278,10 @@ const Home = () => {
                   parents.
                 </p>
 
-                <div className="flex relative w-44 h-12 ">
-                  <img
-                    src="https://s3-alpha-sig.figma.com/img/2cf2/8529/c55d9beef148505189ec77359141ede7?Expires=1701648000&Signature=CSQbTNk2asLxRjfIE6mhCI4PW9c9KwZJn4DTnZcpFZnP0LdFPVCl6rifoOLHBSuYvwKnqArMMeTTyTgCwt8aqYoqW9iKQV4aUOcyxRGjN9g5XDZNdPN7r-2OmuvDJ25zio-okaQvQcR6I8AhFF9CA9CPGmlUS~6Sjd40Q7yw0I1AqJp~gWLN1PwYlYRGk8LPCDdra6ZeYbq2plLx0Fc2Wa5wQwoUe7qsGEibLlWEQcCA6PKy8Z9sMN4wR6pmtAQ8Ypq7as6vSOQQb8inacQeL8P3fIsZz~tr2dOfR71jCZZ~9yzV2ISHc-fMAfzjZmBRsBIpuyPkXS1tYZ0dj1ayLQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                    alt=""
-                    className="w-11 rounded-full border-4 border-white absolute top-0"
-                  />
-                  <img
-                    src="https://s3-alpha-sig.figma.com/img/4766/5a6e/8ec2532a78a112982f7385c7ea6f0e47?Expires=1701648000&Signature=oCJA6pi4UuM6kvjpzU7HD7Ufr54pvz5GkLpyNS5ii6rnT8fxxF-cKnuod23RZZMG5dfv2kp5facu0K94aVR2bTsr1uOTsFpBMBcpP5mp5QJoRz6J~HodxIcaPYO0gzOpclfb~XX6iZLJzoQ-ojfwn3bjQ2FlRj1MIFwIa87ZQdFRzYrSABSqkTfaIM8dQGwV5HX55RnDsCLB6CmbCPOZd1grbSxOa-VScKOSctnlY5X8AOvyEwwelEFTzpIZh-61Cq48H9Q0W6BBkRxjAAiWuwEox1qLfET8rwl~PnnE9WohLfmZ-RoqU7cGg96qUzsZiZxJ5SgJgVNaWU8m5~jOOg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                    alt=""
-                    className="w-11 rounded-full border-4 border-white absolute top-0 left-8"
-                  />
-                  <img
-                    src="https://s3-alpha-sig.figma.com/img/0577/f0e9/b7fca2f32639871454da0de95f951709?Expires=1701648000&Signature=UcQmTErpyxmZK~6V8IiE2V~x~-mTuXfeQmr8n2pEjz1IF60BRUTwbi-MfZfj73rzXS0kd-R24hYZaoLd~9A3xDI2fGyQOjCu8LRl8nny~s5uSa8hadV34cWSWNsQWUTHW24JuNLDwa7HBjXiRS2Q234BoLqB1nNn0rB5dsLlFMiDJP-wReICHljutm9SmKTfuNmSuFmk-dtsD3yasoxsZNUpotZby8T0wLoBP3IYv6nzMcLG0s2e7WOo7f3XdviScVt5u9fvqD35QlzXX3ty11srrWoxLZcyuSrFsacFv3QGq3XN43uI8Dv~KmdfH546Mw7J~VLza8f8r68VkvsVbQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                    alt=""
-                    className="w-11 rounded-full border-4 border-white absolute top-0 left-16"
-                  />
-                  .
-                  <img
-                    src="https://s3-alpha-sig.figma.com/img/eb8f/7bbe/6deda478e2bb4b25f7ea2fb6e215c458?Expires=1701648000&Signature=RxclgQrsQxWH40Mrka~yrEXu3iETC-melYxbM8IFjrRsgdrzEtzG3LjcXHBSJaH48BPmqiN71CeDFJ3Gqe9p5WE5B54loHturh4iJESRBNXshJOiVUDOKIjfDUNrpU~d9FHpy~DRAhoLzIXQp8ZZi-aDOAbMGpmiVwNgp2V~amOW~6VrMM85qIiMk1MAXacRI0yf8jEVzdGFA-EvvMgBAvlRpJyaKa7iW-wrMPeImFI4xI8R10f0buqgmBpfx3aAkYR~4FP1J-QrNTGam8MKnsDN7MvcgNQ7IwnimGE8ZP8fL9Zx7hK-6bWWampJXtWKrPmr0sNJbrECZEI-uxDnVg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                    alt=""
-                    className="w-11 rounded-full border-4 border-white absolute top-0 left-24"
-                  />
-                  .
-                  <img
-                    src="https://s3-alpha-sig.figma.com/img/dd98/9ae8/febefaf6866dee1ff4c1dd324bf062d9?Expires=1701648000&Signature=mNSI76wDS~ZVYz4Vh7ibAMbpoiKEE5v6OXejEWHgFaAv8-ptFX2EXu7G21cifhL~cvQpxxNbiw1fGBYPDH7lzir0LFoEAIgZBJn2ajgwfPAguzzFy3Po63orfJfdzFyN7npYIYiktYu6EsTvmh19UHuQLEnXAPcwVduuuPToszku07jANhcncguRhQuI8I5ZREYQaVBQRNaHHU9LkwpgllychDRKaACQI4WUpIUFNZPe2GA4N4xb0CQ4OHSQpNZ-VdyOGkWAgYA~6EtMpowsGpjNlHSS4oOqe4xtAq0NkErjm1fzH2fscOwYpBnSm2oXzdU8iSGsirW2wapDmT7QdA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                    alt=""
-                    className="w-11 rounded-full border-4 border-white absolute top-0 left-32"
-                  />
-                  .
+                <div>
+                  <img src={cardImage} alt="" />
                 </div>
+                
 
                 <div className="flex gap-1 items-center justify-center">
                   <FaStar className="text-bluePrimary" />

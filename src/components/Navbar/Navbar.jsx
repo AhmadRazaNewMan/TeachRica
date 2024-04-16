@@ -168,7 +168,7 @@ const Navbar = ({ color }) => {
                   Home
                 </Link>
                 <Link 
-                className={isActive('/TeachRica/about') ? 'text-bluePrimary underline' : 'text-black'} onClick={() => isActive('/TeachRica/about')}
+                className={isActive('/TeachRica/about') ? 'text-bluePrimary underline' : 'text-black '} onClick={() => isActive('/TeachRica/about')}
                   to="/TeachRica/about"
                 >
                   About Us
