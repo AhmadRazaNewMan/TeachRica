@@ -23,6 +23,7 @@ const Home = () => {
           backgroundAttachment: "fixed",
         }}
       >
+        
         <div className="flex w-10/12 m-auto ">
           <div className="flex flex-col items-center justify-center gap-4 w-2/12">
             <div

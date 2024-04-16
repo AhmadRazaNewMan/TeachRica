@@ -30,7 +30,7 @@ const Navbar = ({ color }) => {
         active ? "shadow-lg " : ""
       } fixed w-full  top-0 left-0 z-20 ${color}`}
     >
-      <div className="">
+      <div className="text-nowrap">
         <div className=" bg-bluePrimary flex items-center justify-center  h-[1.5rem]">
           <p className="text-center text-xs text-white">
             {" "}
@@ -44,15 +44,15 @@ const Navbar = ({ color }) => {
               active ? "py-3 transition-all duration-300" : "py-6 "
             }  container mx-auto   flex items-center justify-between px-1 `}
           >
-            <div className="flex items-center gap-4 w-1/3 ">
+            <div className="flex border-2 items-center gap-4 w-[100px] ">
               {/* left icon */}
               <HiMenuAlt1
-                className="text-3xl sm:hidden cursor-pointer"
+                className="text-5xl md:hidden cursor-pointer"
                 onClick={() => setToggle(true)}
               />
               
               <svg
-              className=" "
+              className=""
                 xmlns="http://www.w3.org/2000/svg"
                 width="120"
                 height="49"
@@ -160,49 +160,47 @@ const Navbar = ({ color }) => {
 
             {/* Links */}
 
-            <div className="sm:flex mx-10 hidden  font-semibold w-[100%] items-center justify-center ">
-            <div className="  w-inherit flex gap-2 sm:text-[14px] md:gap-4 md:text-[15px]  " >
-              <Link className={isActive('/TeachRica/') ? 'text-bluePrimary underline' : 'text-black'} onClick={() => isActive('/TeachRica/')}
+            <div className="md:flex mx-20  hidden  w-auto">
+            <div className="  w-auto flex gap-16 text-xl" >
+              <Link className={isActive('/TeachRica/') ? 'text-bluePrimary underline' : 'text-black '} onClick={() => isActive('/TeachRica/')}
                   to="/TeachRica/"
-                  
                 >
                   Home
                 </Link>
                 <Link 
                 className={isActive('/TeachRica/about') ? 'text-bluePrimary underline' : 'text-black'} onClick={() => isActive('/TeachRica/about')}
                   to="/TeachRica/about"
-                 
                 >
                   About Us
                 </Link>
                 <Link
                 className={isActive('/TeachRica/services') ? 'text-bluePrimary underline' : 'text-black'} onClick={() => isActive('/TeachRica/servives')}
                   to="/TeachRica/services"
-                 
                 >
                   Services
                 </Link>
                 {/* Stem Education System Button */}
-                <Link className="bg-red-500 text-white rounded-md  px-8 py-2 relative bottom-2">Stem Education</Link>
+                <Link className="bg-red-500 text-white rounded-md  px-8 py-2 relative bottom-1">STEM Education</Link>
                 <Link
-                className={isActive('/TeachRica/testimonials') ? 'text-bluePrimary underline' : 'text-black'} onClick={() => isActive('/TeachRica/testimonials')}
+                className={isActive('/TeachRica/testimonials') ? 'text-bluePrimary underline' : 'text-black '} onClick={() => isActive('/TeachRica/testimonials')}
                   to={"/TeachRica/testimonials"}
-                 
                 >
                   Testimonials
                 </Link>
                 <Link
-                className={isActive('/TeachRica/contactus') ? 'text-bluePrimary underline' : 'text-black'} onClick={() => isActive('/TeachRica/contactus')}
+                className={isActive('/TeachRica/contactus') ? 'text-bluePrimary underline' : 'text-black  '} onClick={() => isActive('/TeachRica/contactus')}
                   to="/TeachRica/contactus"
-                 
                 >
                   Contact Us
                 </Link>
+               
               </div>
+
             </div>
 
+
             {/*Buttons  */}
-            <button className="text-sm bg-blueSecondary text-white rounded-3xl py-3 px-6 outline-none">
+            <button className="text-sm bg-blueSecondary text-white rounded-3xl relative  py-3 px-6 outline-none ">
               +923046667704
             </button>
 
