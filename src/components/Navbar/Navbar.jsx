@@ -44,7 +44,7 @@ const Navbar = ({ color }) => {
               active ? "py-3 transition-all duration-300" : "py-6 "
             }  container mx-auto   flex items-center justify-between px-1 `}
           >
-            <div className="flex border-2 items-center gap-4 w-auto ">
+            <div className="flex items-center gap-4 w-auto ">
               {/* left icon */}
               <HiMenuAlt1
                 className="text-3xl md:hidden cursor-pointer"
@@ -171,7 +171,7 @@ const Navbar = ({ color }) => {
                 className={isActive('/TeachRica/about') ? 'text-bluePrimary underline' : 'text-black '} onClick={() => isActive('/TeachRica/about')}
                   to="/TeachRica/about"
                 >
-                  About Us
+                  About
                 </Link>
                 <Link
                 className={isActive('/TeachRica/services') ? 'text-bluePrimary underline' : 'text-black'} onClick={() => isActive('/TeachRica/servives')}
@@ -191,7 +191,7 @@ const Navbar = ({ color }) => {
                 className={isActive('/TeachRica/contactus') ? 'text-bluePrimary underline' : 'text-black  '} onClick={() => isActive('/TeachRica/contactus')}
                   to="/TeachRica/contactus"
                 >
-                  Contact Us
+                  Contact
                 </Link>
                
               </div>
