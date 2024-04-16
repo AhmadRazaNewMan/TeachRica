@@ -4,20 +4,21 @@ import pair1last from "../assets/pair1last.png";
 import pair1mid from "../assets/pair1mid.png";
 import pair1top from "../assets/pair1top.png";
 
-const CommonHeader = ({data}) => {
+const CommonHeader = ({ data }) => {
   return (
-    <div className=" bg-bluePrimary xs:flex-col justify-center items-center sm:flex-col md:flex-row  w-full py-32 flex  flex-end mb-20 overflow-hidden ">
-      <div className="text-white  ml-[30%] flex flex-col items-center ">
-      
-        <h1 className="xs:text-5xl md:text-7xl   font-bold mb-8  mr-40 md:mb-10">{data.title} </h1>
-        <p className="pl-4  xs:mt-1 md:mt- mr-40 w-4/5  text-lg">
-        {data.description}
+    <div className=" bg-bluePrimary xs:flex-col justify-center items-center sm:flex-col md:flex-row  w-full py-32 flex  flex-end mb-20 ">
+      <div className="text-white  ml-[35%] w-[full] flex flex-col items-center justify-center  mr-48">
+        <h1 className="xs:text-5xl md:text-7xl   w-[100%] font-bold   text-center mb-4">
+          {data.title}
+        </h1>
+        <p className="pl-4  xs:mt-1 md:mt- mx-auto w-full  text-lg">
+          {data.description}
         </p>
       </div>
 
       <div className="flex  mt-7 ">
         <svg
-        className="z-10"
+          className="z-10"
           width="169"
           height="166"
           viewBox="0 0 169 166"
@@ -171,7 +172,9 @@ const CommonHeader = ({data}) => {
               </div>
             </div>
 
-            <p className="text-white font-semibold text-xl  w-[150px] ">How it works? </p>
+            <p className="text-white font-semibold text-xl  w-[150px] ">
+              How it works?{" "}
+            </p>
           </div>
         </div>
       </div>

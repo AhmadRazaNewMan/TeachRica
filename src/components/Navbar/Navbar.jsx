@@ -44,10 +44,10 @@ const Navbar = ({ color }) => {
               active ? "py-3 transition-all duration-300" : "py-6 "
             }  container mx-auto   flex items-center justify-between px-1 `}
           >
-            <div className="flex border-2 items-center gap-4 w-[100px] ">
+            <div className="flex border-2 items-center gap-4 w-auto ">
               {/* left icon */}
               <HiMenuAlt1
-                className="text-5xl md:hidden cursor-pointer"
+                className="text-3xl md:hidden cursor-pointer"
                 onClick={() => setToggle(true)}
               />
               
@@ -55,7 +55,7 @@ const Navbar = ({ color }) => {
               className=""
                 xmlns="http://www.w3.org/2000/svg"
                 width="120"
-                height="49"
+                height="50"
                 viewBox="0 0 120 49"
                 fill="none"
               >
